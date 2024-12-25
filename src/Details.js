@@ -68,8 +68,8 @@ export const projectDetails = [
     image: projectImage1,
     description: `Responsive multi pages e-book store website designed for an engaging and seamless experience,Website consists of register and login form, admindashboard, home page, orders, cart, checkout etc.`,
     techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://storynest.000webhostapp.com/register.php",
-    githubLink: "https://github.com/VennaKeerthi/Ecommerce_bookstore.git",
+    previewLink: "http://ecommercebookstore.infinityfreeapp.com",
+    githubLink: "https://github.com/VennaKeerthi/Ecommerce_Bookstore-PHP.git",
   },
   {
     title: "Weather PWA",
