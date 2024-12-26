@@ -1,11 +1,16 @@
 
 // Profile Image
-import profile from "./assets/profile.jpg";
+import profile from "./assets/pimg.jpg";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
 import js from "./assets/techstack/js.png";
 import react from "./assets/techstack/react.png";
+import php from "./assets/techstack/php.jpg";
+import nodejs from "./assets/techstack/nodejs.jpg";
+
+import mysql from "./assets/techstack/mysql.jpg";
+import mongoDB from "./assets/techstack/mongoDB.jpg";
 
 import vscode from "./assets/techstack/vscode.png";
 import github from "./assets/techstack/github.png";
@@ -56,6 +61,10 @@ export const techStackDetails = {
   css: css,
   js: js,
   react: react,
+  php: php,
+  nodejs: nodejs,
+  mysql: mysql,
+  mongoDB: mongoDB,
   vscode: vscode,
   git: git,
   github: github,
@@ -67,7 +76,7 @@ export const projectDetails = [
     title: "Ecommerce Bookstore",
     image: projectImage1,
     description: `Responsive multi pages e-book store website designed for an engaging and seamless experience,Website consists of register and login form, admindashboard, home page, orders, cart, checkout etc.`,
-    techstack: "HTML/CSS, JavaScript",
+    techstack: "HTML/CSS, JavaScript, PHP",
     previewLink: "http://ecommercebookstore.infinityfreeapp.com",
     githubLink: "https://github.com/VennaKeerthi/Ecommerce_Bookstore-PHP.git",
   },
