@@ -35,27 +35,27 @@ function Header() {
       <nav className={`${!isOpen ? "hidden" : ""} text-center md:flex justify-between`}>
         <ul className="dark:text-light-content text-lg font-bold md:flex items-center md:space-x-8 md:mr-10">
           <li>
-            <a href="#home" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+            <a href="#home" onClick={toggleClass} className="text-lg hover:underline underline-offset-4">
                Home
           </a>
         </li>
         <li>
-          <a href="#about" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+          <a href="#about" onClick={toggleClass} className="text-lg hover:underline underline-offset-4">
             About
           </a>
         </li>
         <li>
-          <a href="#technologies" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+          <a href="#technologies" onClick={toggleClass} className="text-lg hover:underline underline-offset-4">
             Technologies
           </a>
         </li>
         <li>
-          <a href="#projects" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+          <a href="#projects" onClick={toggleClass} className="text-lg hover:underline underline-offset-4">
             Projects
           </a>
         </li>
         <li>
-          <a href="#contact" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+          <a href="#contact" onClick={toggleClass} className="text-lg hover:underline underline-offset-4">
             Contact
           </a>
         </li>

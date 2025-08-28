@@ -21,7 +21,12 @@ function Technologies() {
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-3xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+          Technical Skills
+        </h1>
+      </section>
+      <section>
+        <h1 className="text-lg pt-10 text-dark-heading dark:text-light-heading md:text-lg xl:text-lg xl:leading-tight">
           Programming Languages
         </h1>
       </section>
@@ -32,7 +37,7 @@ function Technologies() {
       </section>
       <br></br><br></br>
       <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-lg text-dark-heading dark:text-light-heading md:text-lg xl:text-lg xl:leading-tight ">
           Tech Stack
         </h1>
       </section>
@@ -45,7 +50,7 @@ function Technologies() {
         <img src={nodejs} title="Node.js" alt="" />
       </section>
       <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-3xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-lg pt-10 text-dark-heading dark:text-light-heading md:text-lg xl:text-lg xl:leading-tight ">
           Databases
         </h1>
       </section>
@@ -54,7 +59,7 @@ function Technologies() {
         <img src={mongoDB} title="MongoDB" alt="" />
       </section>
       <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-lg pt-10 text-dark-heading dark:text-light-heading md:text-lg xl:text-;g xl:leading-tight ">
           Tools
         </h1>
       </section>
