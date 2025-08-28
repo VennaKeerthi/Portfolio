@@ -9,7 +9,7 @@ function About() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         
         {/* Left Side - About Me Text */}
-        <div className="flex-1 text-center text-white md:text-left xl:text-left text-black">
+        <div className="flex-1 text-center text-black md:text-left xl:text-left text-black">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg leading-relaxed mb-4">
             {personalDetails.about}
