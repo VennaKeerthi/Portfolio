@@ -48,15 +48,26 @@ h3{
 
 
 /* Body settings */
+/* Mobile (default) */
 body {
   font-family: "Poppins", sans-serif;
   background-image: url('/public/bg.jpg');
-  background-size: cover;       /* make the image cover the entire viewport */
-  background-position: center;  /* center the image */
-  background-repeat: no-repeat; /* prevent repeating */
-  min-height: 100vh;            /* ensure it fills the screen */
-  color: white;                 /* set text color for contrast */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
 }
+
+/* Desktop (screen width ≥ 768px) */
+@media (min-width: 768px) {
+  body {
+    font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  overflow-x: hidden;
+  }
+}
+
 
 
 
