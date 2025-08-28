@@ -79,9 +79,17 @@ function Home() {
           {tagline}
         </h2>
       </div>
-      <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Keerthi" />
+      <div className="mt-5 md:mt-0 flex justify-center md:justify-end">
+          <img
+            ref={myimageref}
+            className="w-1/2 md:w-3/5 rounded-2xl shadow-xl border-4 border-transparent 
+                      bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-1 
+                      hover:scale-105 transition-transform duration-300 ease-in-out"
+            src={img}
+            alt="Keerthi"
+          />
       </div>
+
     </main>
   );
 }

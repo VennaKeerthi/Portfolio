@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { socialMediaUrl } from "../Details";
 
 function Header() {
@@ -11,6 +10,7 @@ function Header() {
 
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
+      {/* Mobile Menu Icon */}
       <div className="flex justify-between items-center py-2 md:py-10">
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
@@ -30,64 +30,68 @@ function Header() {
           </svg>
         </div>
       </div>
-      <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
-        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/" onClick={toggleClass}>
-              Home
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/about" onClick={toggleClass}>
-              About
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/technologies" onClick={toggleClass}>
-              Technologies
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/projects" onClick={toggleClass}>
-              Projects
-            </NavLink>
-          </li>
+
+      {/* Navigation */}
+      <nav className={`${!isOpen ? "hidden" : ""} text-center md:flex justify-between`}>
+        <ul className="dark:text-light-content text-lg font-bold md:flex items-center md:space-x-8 md:mr-10">
           <li>
-            <NavLink to="/contact" onClick={toggleClass}>
-              Contact
-            </NavLink>
-          </li>
+            <a href="#home" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+               Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#technologies" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+            Technologies
+          </a>
+        </li>
+        <li>
+          <a href="#projects" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#contact" onClick={toggleClass} className="text-2xl hover:underline underline-offset-4">
+            Contact
+          </a>
+        </li>
+
         </ul>
+
+        {/* Social Links */}
         <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
-          
           <li>
             <a href={linkdein} target="_blank" rel="noreferrer noopener">
+              {/* LinkedIn Icon */}
               <svg
                 className="dark:fill-light-heading fill-dark-heading"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77997 8.48251 8.97297C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97297C11.571 9.77997 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685Z" />
+                <path d="M15 0.6C7.05 0.6 0.6 7.05 0.6 15C0.6 22.95 7.05 29.4 15 29.4C22.95 29.4 29.4 22.95 29.4 15C29.4 7.05 22.95 0.6 15 0.6ZM11.5 21H8.56V11.6h2.92V21Zm-1.48-10.5c-0.92 0-1.52-0.65-1.52-1.46 0-0.83 0.61-1.47 1.55-1.47s1.53 0.64 1.55 1.47c0 0.81-0.6 1.46-1.58 1.46ZM22.1 21h-2.92v-5.2c0-1.21-0.42-2.03-1.48-2.03-0.8 0-1.28 0.55-1.48 1.08-0.08 0.19-0.1 0.46-0.1 0.74V21h-2.92v-6.4c0-1.17-0.04-2.15-0.06-3.02h2.54l0.13 1.3h0.06c0.35-0.58 1.23-1.41 2.67-1.41 1.93 0 3.38 1.27 3.38 4.01V21Z" />
               </svg>
             </a>
           </li>
           <li>
             <a href={github} target="_blank" rel="noreferrer noopener">
+              {/* GitHub Icon */}
               <svg
                 className="dark:fill-light-heading fill-dark-heading"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
-                  d="M15 0C6.7125 0 0 6.7125 0 15C0 21.6375 4.29375 27.2437 10.2563 29.2313C11.0063 29.3625 11.2875 28.9125 11.2875 28.5188C11.2875 28.1625 11.2688 26.9813 11.2688 25.725C7.5 26.4188 6.525 24.8062 6.225 23.9625C6.05625 23.5312 5.325 22.2 4.6875 21.8438C4.1625 21.5625 3.4125 20.8687 4.66875 20.85C5.85 20.8313 6.69375 21.9375 6.975 22.3875C8.325 24.6562 10.4812 24.0187 11.3438 23.625C11.475 22.65 11.8688 21.9937 12.3 21.6187C8.9625 21.2437 5.475 19.95 5.475 14.2125C5.475 12.5813 6.05625 11.2313 7.0125 10.1813C6.8625 9.80625 6.3375 8.26875 7.1625 6.20625C7.1625 6.20625 8.41875 5.8125 11.2875 7.74375C12.4875 7.40625 13.7625 7.2375 15.0375 7.2375C16.3125 7.2375 17.5875 7.40625 18.7875 7.74375C21.6562 5.79375 22.9125 6.20625 22.9125 6.20625C23.7375 8.26875 23.2125 9.80625 23.0625 10.1813C24.0188 11.2313 24.6 12.5625 24.6 14.2125C24.6 19.9688 21.0938 21.2437 17.7563 21.6187C18.3 22.0875 18.7688 22.9875 18.7688 24.3937C18.7688 26.4 18.75 28.0125 18.75 28.5188C18.75 28.9125 19.0312 29.3813 19.7812 29.2313C22.759 28.2259 25.3465 26.3121 27.1796 23.7592C29.0127 21.2063 29.9991 18.1429 30 15C30 6.7125 23.2875 0 15 0Z"
+                  d="M15 0C6.7 0 0 6.7 0 15c0 6.64 4.29 12.24 10.26 14.23 0.75 0.13 1.03-0.33 1.03-0.73 0-0.36-0.02-1.55-0.02-2.8-3.77 0.69-4.75-1.52-5.05-2.36-0.17-0.44-0.9-1.77-1.54-2.13-0.52-0.28-1.27-0.96-0.02-0.98 1.18-0.02 2.02 1.1 2.33 1.56 1.35 2.27 3.51 1.63 4.38 1.23 0.14-0.99 0.53-1.63 0.96-2.01-3.34-0.37-6.83-1.67-6.83-7.42 0-1.64 0.58-2.98 1.55-4.04-0.16-0.39-0.67-1.96 0.15-4.09 0 0 1.27-0.41 4.16 1.56 1.2-0.33 2.49-0.5 3.77-0.5s2.57 0.17 3.77 0.5c2.89-1.97 4.16-1.56 4.16-1.56 0.82 2.13 0.31 3.7 0.15 4.09 0.97 1.06 1.55 2.4 1.55 4.04 0 5.77-3.5 7.05-6.85 7.42 0.54 0.47 1.04 1.39 1.04 2.8 0 2.02-0.02 3.65-0.02 4.15 0 0.4 0.27 0.86 1.04 0.72C25.71 27.23 30 21.63 30 15c0-8.3-6.7-15-15-15Z"
                 />
               </svg>
             </a>
