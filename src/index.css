@@ -63,7 +63,8 @@ body {
 @media (min-width: 768px) {
   body {
     font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #141e30, #243b55);
+  @apply bg-gradient-to-r from-gray-50 via-gray-100 to-gray-200 
+         text-gray-900;
   overflow-x: hidden;
   }
 }
