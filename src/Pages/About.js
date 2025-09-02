@@ -4,7 +4,7 @@ import { personalDetails, eduDetails } from "../Details";
 
 function About() {
   return (
-    <main className="container mx-auto max-width pt-10 pb-20 md:bg-gray-100">
+    <main className="container mx-auto max-width pt-10 pb-20">
       <section className="w-full py-16 px-6 md:w-full bg-gray-300 py-16 px-6 ">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         
